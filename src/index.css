@@ -1,0 +1,1100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* custom colors  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color:  #4F336B;
+  --text-color: #050505;
+  --footer-background: #252527;
+  --footer-text: #7D7D82;
+}
+
+html {
+  font-size: 10px;
+}
+
+.navbar-toggler:focus
+{
+         outline: none !important;
+         box-shadow: none!important;
+}
+
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    border-radius: 0!important;
+    box-shadow: 0 0.5rem 0.5rem var(--primary-color)!important;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: none!important;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* --------------------------------- navbar css style starts
+                        -------------------------------------------------------*/
+
+.navbar-bg {
+  background-color: var(--bgcolor);
+  padding: 0 0;
+  z-index: 99;
+  position: relative;
+}
+
+/* li.main-active{
+  color: var(--primary-color);
+} */
+
+.navbar-brand {
+  width: 11rem;
+}
+
+.navbar li {
+  padding: 0 2rem;
+}
+
+.navbar li a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: 0.5s;
+  position: relative;
+  color: var(--primary-color)!important;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.navbar li a:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 3px;
+  background: var(--primary-color);
+  transition: all 0.5s linear;
+}
+
+.navbar li a:hover:before{
+  width: 50%;
+  background-color: var(--primary-color);
+}
+
+.navbar li a:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background: var(--primary-color);
+  transition: all 0.5s linear;
+}
+
+.navbar li a:hover:after{
+  width: 50%;
+  background-color: var(--primary-color);
+}
+
+.btn-style {
+  width: 100%!important;
+  height: 4rem;
+  /* color: #fff; */
+  box-shadow: 0 0.5rem 0.5rem var(--primary-color);
+  border-radius: 0.3rem!important;
+}
+
+.btn-style:first-child {
+    /*first btn*/
+  color: var(--primary-color);
+  background-color: transparent;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.btn-style:hover {
+  border: 0.2rem solid var(--primary-color);
+  box-shadow: none;
+  border-radius: 0.3rem!important;
+}
+
+/* .btn-style-border {
+  width: 100%;
+  height: 4rem;
+  border: 0.2rem solid var(--primary-color)!important;
+  background-color: transparent;
+  color: var(--primary-color)!important;
+  font-size: 1.8rem!important;
+  font-weight: 400!important;
+  border-radius: 0.3rem!important;
+}
+
+.btn-style-border:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  box-shadow: 0 0.5rem 0.5rem var(--primary-color)!important;
+  border: none!important;
+  border-radius: 0.3rem!important;
+} */
+
+ .navbar-toggler-icon i{
+  font-size: 2rem;
+  color: var(--primary-color)!important;
+}
+/* --------------------------------- Navbar ends
+                        -------------------------------------------------------*/
+
+/* --------------------------------- Hero sEction  starts
+                        -------------------------------------------------------*/
+                        header {
+                          background-color: var(--bgcolor);
+                          min-height: 100vh!important;
+                          width: 100%;
+                        }
+
+                        .main-hero-container {
+                          height: 80vh;
+                          display: flex;
+                        }
+
+                        .main-hero-container .btn-style-more{
+                          border: 2px solid var(--primary-color);
+                          padding: 10px;
+                          margin: 2rem 0 0 0;
+                          text-align: center;
+                          font-weight: normal;
+                          font-family: 'Signika Negative', sans-serif;
+                          font-size: 2rem;
+                          color: #000;
+                          border-radius: 5rem;
+                        }
+
+                        .main-hero-container .btn-style-more:hover{
+                          color: #000;
+                          background-color: transparent;
+                          box-shadow: 0 0.5rem 0.5rem var(--primary-color)!important;
+                          border: none!important;
+                        }
+
+                        .main-hero-container h1 {
+                          text-transform: capitalize;
+                          font-weight: bolder;
+                          font-family: 'Roboto Slab', sans-serif;
+                        }
+
+                        .main-hero-container h1.display-1{
+                          font-size: 3vw;
+                          color: #000;
+
+                        }
+                        .main-hero-container h1.display-2{
+                          font-size: 4.3vw;
+                          background: -webkit-radial-gradient(#fbb03b 0%, #f15a24 52.7%, #fe0904 100%);
+                          background-clip: text;
+                          -webkit-text-fill-color: transparent;
+                        }
+
+                        .main-hero-container .main-hero-para {
+                          font-size: 2rem;
+                          color: var(--text-color);
+                          margin: 0;
+                          font-weight: 400;
+                          width: 75%;
+                          font-family: 'Signika Negative', sans-serif;
+                        }
+
+                        .main-hero-container i{
+                          color: var(--primary-color);
+                          font-size: 5rem;
+                          cursor: pointer;
+                          margin-bottom: 2rem;
+                        }
+
+                        /* right side of hero section  */
+                        @media screen and (min-width: 992px){
+                          .main-herosection-images {
+                            position: relative;
+                            width: 40vw!important;
+                            /* width: 620px!important; */
+                            height: auto!important;
+                          }
+                          .main-hero-img1 {
+                            position: absolute;
+                            z-index: 2;
+                            width: 100%!important;
+                            height: 100%!important;
+                          }
+                           .main-hero-img2{
+                            opacity: 0.5;
+                            width: 70%;
+                            height: auto!important;
+                          }
+                        }
+
+                        @media screen and (max-width: 992px) {
+                          .main-hero-container{
+                            height: 100%!important;
+                          }
+                          .main-herosection-images{
+                            margin-top: 4rem!important;
+                          }
+                          .main-hero-img1 {
+                            position: absolute;
+                            z-index: 2;
+                            width: 80%!important;
+                            height: auto!important;
+                          }
+                           .main-hero-img2{
+                            opacity: 0.5;
+                            width: 70%;
+                            height: auto!important;
+                          }
+                          .main-hero-container .right{
+                            margin-top: 2rem;
+                            justify-content: center!important;
+                            align-items: center!important;
+                            text-align: center!important;
+                          }
+                        }
+
+                        .main-hero-img2{
+                          animation: up-down 2s ease-in-out infinite alternate-reverse both;
+                      }
+
+                      @-webkit-keyframes up-down {
+                          0% {
+                              transform: translateY(10px);
+                          }
+                          100% {
+                              transform: translateY(-10px);
+                          }
+                      }
+
+                      @keyframes up-down {
+                          0% {
+                              transform: translateY(10px);
+                          }
+                          100% {
+                              transform: translateY(-10px);
+                          }
+                      }
+
+
+                        /* --------------------------------- Hero sEction  ends
+                                                -------------------------------------------------------*/
+/* --------------------------------- Work Section below hero section   starts
+                        -------------------------------------------------------*/
+
+                        .work-container {
+                          width: 80vw;
+                          padding: 5rem;
+                          box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+                          background-color: #fff;
+                          border-radius: 0.5rem;
+                        }
+
+                        @media screen and (min-width: 992px) {
+                          .work-container{
+                            margin-top: -10rem;
+                          }
+                        }
+
+                        .work-container .main-heading {
+                          font-size: 3rem;
+                          font-family: 'Roboto Slab', sans-serif;
+                          font-weight: bolder;
+                          margin-bottom: 2rem;
+                          word-spacing: 1rem;
+                        }
+
+                        .work-container-subdiv {
+                          padding: 0 1rem!important;
+                        }
+
+                        .work-container .sub-heading {
+                          font-size: 2rem;
+                          font-weight: normal;
+                          font-family: 'Signika Negative', sans-serif;
+                        }
+
+                        .work-container .main-hero-para{
+                          font-weight: lighter;
+                          font-family: 'Signika Negative', sans-serif;
+                          font-size: 1.5rem;
+                          color: var(--text-color);
+                        }
+
+                        .fontawesome-style {
+                          font-size: 2.3rem;
+                          color: var(--primary-color);
+                          width: 6rem;
+                          height: 6rem;
+                          border-radius: 50%;
+                          background-color: var(--bgcolor);
+                          display: grid;
+                          place-items: center;
+                          text-align: center;
+                          margin: 2rem auto;
+                        }
+                        /* --------------------------------- Work Section below hero section   ends
+                                                -------------------------------------------------------*/
+/* --------------------------------- Services Section starts
+                        -------------------------------------------------------*/
+
+                        .service-main-container {
+                          margin-top: 5rem;
+                        }
+
+                        .service-main-container .main-heading {
+                          font-size: 3rem;
+                          font-family: 'Roboto Slab', sans-serif;
+                          font-weight: bolder;
+                          margin-bottom: 2rem;
+                          word-spacing: 1rem;
+                        }
+
+                        .service-main-container .work-container-subdiv {
+                          box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
+                          margin: 0 3rem 3rem 3rem;
+                        }
+
+                        .service-main-container .work-container-subdiv:hover {
+                          border: 2px solid var(--primary-color);
+                          box-shadow: none;
+                        }
+
+                        @media (min-width: 992px) {
+                          .service-main-container .work-container-subdiv .date, .data{
+                            transform: translateX(-5rem);
+                          }
+                          .service-main-container .work-container-subdiv .date{
+                            margin: 2px 0!important;
+                          }
+                          .service-main-container .work-container-subdiv .data{
+                            padding-right: 0!important;
+                          }
+
+                        }
+
+                        @media (max-width: 992px) {
+                          .service-main-container .card-upcoming-event{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center!important;
+                            align-items: center!important;
+                            height: auto!important;
+                            width: 300px!important;
+                          }
+                          .service-main-container .work-container-subdiv .date{
+                            padding: 3rem 0;
+                          }
+                          .service-main-container .work-container-subdiv .data{
+                            margin: 2px 0!important;
+                            text-align: center!important;
+                            justify-content: center!important;
+                            align-items: center!important;
+                          }
+                        }
+
+                        .service-main-container .work-container-subdiv .date img{
+                          width: 100%;
+                          border-radius: .8rem;
+                        }
+
+                        .service-main-container .sub-heading {
+                          font-size: 2rem;
+                          font-weight: normal;
+                          font-family: 'Signika Negative', sans-serif;
+                        }
+
+                        .service-main-container .main-hero-para{
+                          font-weight: lighter;
+                          font-family: 'Signika Negative', sans-serif;
+                          font-size: 1.5rem;
+                          color: var(--text-color);
+                        }
+
+                        /* --------------------------------- Services Section ends
+                                                -------------------------------------------------------*/
+
+                                                 /* --------------------------------- courses Section starts
+                                                -------------------------------------------------------*/
+                                                .course-main-container {
+                                                  margin-top: 5rem;
+                                                }
+
+                                                .course-main-container .main-heading {
+                                                  font-size: 3rem;
+                                                  font-family: 'Roboto Slab', sans-serif;
+                                                  font-weight: bolder;
+                                                  margin-bottom: 2rem;
+                                                  word-spacing: 1rem;
+                                                }
+
+                                                .course-main-container .course-card {
+                                                  padding: 0;
+                                                  width: 300px;
+                                                  height: 420px;
+                                                  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
+                                                  margin: 0 5rem 5rem 5rem;
+                                                }
+                                                .course-main-container .course-card:hover {
+                                                  border: 2px solid var(--primary-color);
+                                                  box-shadow: none;
+                                                }
+
+                                                .course-main-container .course-card .circle{
+                                                  position: relative;
+                                                  width: 100%;
+                                                  height: 100%;
+                                                  background: var(--bgcolor);
+                                                  clip-path: circle(180px at center 0);
+                                                  display: flex;
+                                                  flex-direction: column;
+                                                  align-items: center;
+                                                  padding-top: 2rem;
+                                                }
+
+                                                .course-card .circle .icon{
+                                                  color: var(--primary-color);
+                                                  font-size: 7rem;
+                                                  justify-content: center;
+
+                                                }
+
+                                                .course-card .course-content{
+                                                  page-break-after: 20px;
+                                                  text-align: center;
+                                                  margin: 3rem 1rem;
+                                                }
+
+                                                .course-card .circle h2{
+                                                  color: var(--primary-color);
+                                                  font-size: 3rem;
+                                                  text-align: center;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                }
+
+                                                .course-card .course-content p{
+                                                  font-weight: lighter;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                  font-size: 1.5rem;
+                                                  /* color: var(--text-color); */
+                                                }
+
+                                                .course-card .course-content a{
+                                                  text-decoration: underline;
+                                                  color: var(--primary-color);
+                                                  font-size: 2rem;
+                                                  font-weight: lighter;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                }
+
+                                                .course-main-container .btn-style-more{
+                                                  border: 2px solid var(--primary-color);
+                                                  padding: 5px;
+                                                  margin: 0;
+                                                  text-align: center;
+                                                  font-weight: normal;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                  font-size: 2rem;
+                                                  color: #000;
+                                                }
+/* --------------------------------- sourses Section ends-------------------------------------------------------*/
+
+/* --------------------------------- Contact US Section starts
+                        -------------------------------------------------------*/
+
+                        .contactus-section {
+                          min-height: 100vh;
+                          margin-top: 5rem;
+                        }
+
+                        .contactus-section .main-heading{
+                          font-size: 3rem;
+                          font-family: 'Roboto Slab', sans-serif;
+                          font-weight: bolder;
+                          margin-bottom: 4rem;
+                          word-spacing: 1rem;
+                        }
+
+                        .contact-input-feild {
+                          margin-bottom: 4rem;
+                        }
+
+                        .contact-leftside{
+                          border: solid 2px var(--primary-color);
+                          margin-top: 6rem!important;
+                          margin-bottom: 6rem;
+                          margin-right: -4rem;
+                          z-index: 2;
+                        }
+
+                        .contact-leftside li span a{
+                          color: #000!important;
+                          text-decoration: none!important;
+                        }
+
+                        .contact-leftside li{
+                          list-style: none;
+                        }
+                        .contact-rightside{
+                          background: var(--bgcolor);
+                          padding: 6rem!important;
+                        }
+
+                        .contact-rightside button{
+                            font-weight: lighter;
+                            font-family: 'Signika Negative', sans-serif;
+                            font-size: 1.5rem;
+                          }
+
+                        .contact-rightside form .form-control {
+                          border-bottom: 2px solid var(--primary-color)!important;
+                          border: none;
+                          font-size: 1.6rem;
+                          padding: 1rem;
+                          font-weight: lighter;
+                          background-color: transparent;
+                        }
+
+                        .contactus-section .contact-leftside ul li span{
+                            font-weight: lighter;
+                            font-family: 'Signika Negative', sans-serif;
+                            font-size: 1.5rem;
+                            color: #000;
+                          }
+
+                        /* --------------------------------- Contact US Section ends
+                                                -------------------------------------------------------*/
+
+/* --------------------------------- Teachers Section starts
+                        -------------------------------------------------------*/
+                        .teachers-main-container{
+                          margin-top: 5rem;
+                        }
+.teachers-main-container .main-heading{
+  font-size: 3rem;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bolder;
+  word-spacing: 1rem;
+  margin-bottom: 2rem;
+}
+
+.teachers-container-subdiv{
+  position: relative;
+  height: 380px;
+  width: 250px!important;
+  background: #000;
+  margin: 0 2rem 4rem 2rem!important;
+  padding: 0;
+}
+
+.teachers-container-subdiv .imgbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.teachers-container-subdiv .imgbox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.teachers-container-subdiv:hover .imgbox img{
+  opacity: 0;
+}
+
+.teachers-container-subdiv .content{
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: var(--bgcolor);
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.teachers-container-subdiv:hover .content{
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teachers-container-subdiv .content h2{
+  justify-content: center;
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+
+}
+
+
+.teachers-container-subdiv h3 {
+  font-weight: lighter;
+  font-family: 'Signika Negative', sans-serif;
+  color: #000;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.teachers-container-subdiv .content p{
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0;
+  line-height: 1.2em;
+  transition: 0.5s;
+  text-align: justify;
+  font-weight: lighter;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.teachers-container-subdiv:hover .content p{
+  opacity: 1;
+  text-align: center;
+}
+/* --------------------------------- Teachers Section ends
+                                                -------------------------------------------------------*/
+
+ /* --------------------------------- Gallery Section ends
+                                                -------------------------------------------------------*/
+
+  .gallery-tabs{
+    margin-top: 5rem;
+  }
+
+  .btn-select{
+    width: 15rem!important;
+    height: 4rem!important;
+    border-radius: 0.3rem!important;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 1.5rem!important;
+    margin-right: 1rem!important;
+    margin-left: 1rem!important;
+    margin-top: 5rem!important;
+    margin-bottom: 2rem!important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .gallery-tabs .active{
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5)!important;
+ }
+
+ .btn-select:hover {
+  border: 0.1rem solid var(--primary-color)!important;
+  background-color: transparent!important;
+  color: var(--primary-color)!important;
+}
+
+
+.image-card {
+	padding: 2px!important;
+	margin: 5px!important;
+	border: 1px solid var(--primary-color);
+	border-radius: 2px;
+  height: auto;
+  width: 300px!important;
+}
+
+.gallery-tabs img{
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+}
+
+@media (max-width: 992px){
+  .tags{
+    flex-direction: column;
+  }
+}
+                                                /* --------------------------------- Gallery Section ends
+                                                -------------------------------------------------------*/
+/* --------------------------------- Testimonials Section starts
+                                                -------------------------------------------------------*/
+.testimonial-tabs{
+  margin-top: 5rem;
+}
+                                                .testimonial-tabs .active{
+                                                  /* background: var(--primary-color); */
+                                                  box-shadow: 0px 4px 8px rgba(0,0,0,0.15)!important;
+                                                 }
+
+                                                .testimonial-tabs .card{
+                                                  background: #fff;
+                                                  padding: 10px!important;
+                                                  margin: 3px!important;
+                                                  border-radius: 5px;
+                                                  height: auto;
+                                                  width: 100%!important;
+                                                  border: 2px solid var(--primary-color);
+                                                  background-color: var(--bgcolor);
+                                                }
+
+                                                .testimonial-tabs .card i.quote{
+                                                  font-size: 20px;
+                                                  color: var(--primary-color);
+                                                }
+
+                                                .testimonial-tabs .card .content{
+                                                  display: flex;
+                                                  flex-wrap: wrap;
+                                                  align-items: center;
+                                                  justify-content: space-between;
+                                                  padding-top: 10px;
+                                                }
+
+
+.course-card .circle h2{
+  color: var(--primary-color);
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.testimonial .card p{
+  font-weight: lighter;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+}
+                                                /*Customize Name Line*/
+                                                .card .info .name{
+                                                  font-weight: normal;
+                                                  font-size: 2rem;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                }
+                                                /*Customize Work Line*/
+                                                .card .info .tag{
+                                                  font-weight: lighter;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                  font-size: 1.3rem;
+                                                }
+
+                                                /*Customize photo in the cards*/
+                                                .card .content .photo{
+                                                  height: 130px;
+                                                  width: 130px;
+                                                  padding: 3px;
+                                                  background: var(--primary-color);
+                                                  border-radius: 50%;
+                                                }
+                                                .content .photo img{
+                                                  height: 100%;
+                                                  width: 100%;
+                                                  object-fit: cover;
+                                                  border-radius: 50%;
+                                                  border: 2px solid #fff;
+                                                }
+                                                .card:hover .content .photo img{
+                                                  border-color: #fff;
+                                                }
+/* --------------------------------- Testimonials Section ends
+                                                -------------------------------------------------------*/
+
+/* ---------------------------------video Testimonials Section starts
+                                                -------------------------------------------------------*/
+.video_testimonial-container{
+  margin-top: 5rem;
+}
+.test_video{
+  margin-top: 3rem;
+}
+.v_sub-heading{
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.instructor_vt{
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+/* ---------------------------------video Testimonials Section ends
+                                                -------------------------------------------------------*/
+
+
+                                                /* ---------------------------------past events Section starts
+                                                -------------------------------------------------------*/
+                                                .pastevents-main-container {
+                                                  margin-top: 5rem;
+                                                }
+
+                                                .pastevents-main-container .main-heading {
+                                                  font-size: 3rem;
+                                                  font-family: 'Roboto Slab', sans-serif;
+                                                  font-weight: bolder;
+                                                  margin-bottom: 2rem;
+                                                  word-spacing: 1rem;
+                                                }
+                                                .pastevents-main-container .pastevents_card{
+                                                  position: relative;
+                                                  width: 300px;
+                                                  height: 400px;
+                                                  margin: 0 auto;
+                                                  background: #fff;
+                                                  transition: 0.5s;
+                                                }
+
+                                                .pastevents-main-container .pastevents_card .pe_face{
+                                                  position: absolute;
+                                                  top: 0;
+                                                  left: 0;
+                                                  width: 100%;
+                                                  height: 100%;
+                                                  display: flex;
+                                                  justify-content: center;
+                                                  align-items: center;
+                                                  text-align: center;
+                                                }
+
+                                                .pastevents-main-container .pastevents_card .pe_face.pe_face1{
+                                                  box-sizing: border-box;
+                                                  padding: 0;
+                                                  text-align: center;
+                                                  background: #fff;
+                                                  border: var(--primary-color) 2px solid;
+                                                }
+                                                .pastevents-main-container .pastevents_card .content{
+                                                  margin-top: 20px!important;
+                                                  margin-left: 0.5rem;
+                                                  margin-right: 0.5rem;
+                                                  margin-bottom: 0!important;
+                                                }
+                                                .pastevents-main-container .pastevents_card .content{
+                                                  font-weight: normal;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                  font-size: 2rem;
+                                                }
+                                                .pastevents-main-container .pastevents_card .content p{
+                                                  font-weight: lighter;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                  font-size: 1.5rem;
+                                                  color: var(--text-color);
+                                                }
+
+                                                .pastevents-main-container .pastevents_card .pe_face.pe_face2{
+                                                  background: var(--bgcolor);
+                                                  transition: 0.5s;
+                                                }
+                                                .pastevents-main-container .pastevents_card:hover .pe_face.pe_face2{
+                                                  height: 80px;
+                                                  width: 80px;
+                                                  border-radius: 50%;
+                                                  top: 30px;
+                                                  left: 50%;
+                                                  transform: translateX(-50%);
+                                                  background: transparent;
+                                                  border: 2px solid var(--primary-color);
+                                                }
+                                                .pastevents-main-container .pastevents_card .pe_face.pe_face2 h2{
+                                                  margin: 0;
+                                                  padding: 0;
+                                                  font-size: 10rem;
+                                                  color: var(--primary-color);
+                                                  transition: 0.5s;
+                                                }
+
+                                                .pastevents-main-container .pastevents_card:hover .pe_face.pe_face2 h2{
+                                                  color: var(--primary-color);
+                                                  font-size: 4rem;
+                                                }
+
+                                                .pastevents-main-container .content a{
+                                                  text-decoration: underline;
+                                                  color: var(--primary-color);
+                                                  font-size: 2rem;
+                                                  font-weight: lighter;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                }
+
+                                                .pastevents-main-container .btn-style-more{
+                                                  border: 2px solid var(--primary-color);
+                                                  padding: 5px;
+                                                  margin: 2rem 0 4rem 0;
+                                                  text-align: center;
+                                                  font-weight: normal;
+                                                  font-family: 'Signika Negative', sans-serif;
+                                                  font-size: 2rem;
+                                                  color: #000;
+                                                }
+                           /* ---------------------------------past events Section ends
+                                                -------------------------------------------------------*/
+
+/* --------------------------------- Footer  Section starts
+                        -------------------------------------------------------*/
+
+                        footer {
+                          padding: 5rem 0 2rem 0;
+                          background-color: var(--footer-background)!important;
+                        }
+
+                        footer .copyright{
+                          border-bottom: solid 2px var(--footer-text);
+                          margin-bottom: 0!important;
+                        }
+                        .footer-row ul li {
+                          list-style: none!important;
+                          font-weight: lighter;
+                          font-family: 'Signika Negative', sans-serif;
+                          font-size: 1.5rem;
+                          cursor: pointer;
+                          margin: 1rem 0;
+                        }
+
+                        .footer-row ul li a{
+                          text-decoration: none;
+                          font-weight: lighter;
+                          font-family: 'Signika Negative', sans-serif;
+                          font-size: 1.5rem!important;
+                          color: var(--footer-text);
+                        }
+
+                        footer li a:hover {
+                          color: #fff!important;
+                        }
+
+                        footer span{
+                          font-weight: lighter;
+                          font-family: 'Signika Negative', sans-serif;
+                          font-size: 1.5rem!important;
+                          color: var(--footer-text);
+                        }
+
+                        footer p{
+                          font-weight: lighter;
+                          font-family: 'Signika Negative', sans-serif;
+                          font-size: 1.5rem!important;
+                          color: var(--footer-text);
+                        }
+
+                        footer p:hover{
+                          color: #fff;
+                        }
+
+                        footer span:hover{
+                          color: #fff;
+                        }
+                        footer .fontawesome-style {
+                          font-size: 2.3rem;
+                          color: var(--footer-text);
+                          background-color: transparent;
+                          width: 0rem;
+                          height: 0rem;
+                          margin: 2rem 0;
+                          cursor: pointer;
+                          text-decoration: none;
+                        }
+
+                        footer h2{
+                          color: #fff;
+                          font-size: 2rem;
+                          font-weight: normal;
+                          font-family: 'Signika Negative', sans-serif;
+                        }
+                        footer a{
+                          text-decoration: none!important;
+                        }
+
+                        .footer-main-hero-para{
+                          font-size: 2rem;
+                          font-weight: normal;
+                          font-family: 'Signika Negative', sans-serif;
+                          color: var(--footer-text);
+                        }
+
+                        footer .fontawesome-style:hover {
+                          transition: all 1s;
+                          animation: rotatefont 1s linear infinite alternate-reverse;
+                          color: #fff;
+                        }
+
+                        @keyframes rotatefont {
+                          0% {
+                            transform: scale(0.6);
+                          }
+                          100% {
+                            transform: scale(1.2);
+                          }
+                        }
+
+                        footer .main-hero-para {
+                          margin: 0;
+                        }
+
+                        /* --------------------------------- Footer  Section ends
+                                                -------------------------------------------------------*/
+
+/*---payment section starts --*/
+.payment-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-container .img-box{
+  width: 400px;
+}
+
+/*---payment sectionens--*/
+
+
